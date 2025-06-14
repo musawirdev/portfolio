@@ -5,79 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Website is Down</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      height: 100vh;
+      background-color: #f8f8f8;
+      color: #333;
+      font-family: "Georgia", serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-      overflow: hidden;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      padding: 40px 60px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-      text-align: center;
+      padding: 40px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       max-width: 500px;
     }
 
-    .emoji {
-      font-size: 80px;
-      margin-bottom: 20px;
-      animation: pulse 2s infinite;
-      filter: drop-shadow(0 0 10px #ff4c4c);
-    }
-
     h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 15px;
-      color: #ff4c4c;
     }
 
     p {
       font-size: 1.1rem;
-      color: #eaeaea;
-      line-height: 1.5;
+      color: #666;
     }
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 20px;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-
-      .emoji {
-        font-size: 60px;
-      }
+    .footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="emoji">🚧</div>
-    <h1>Website is Down</h1>
-    <p>We’re working hard to get everything back up. Please check again in a little while.</p>
+    <h1>Website is Temporarily Unavailable</h1>
+    <p>We apologize for the inconvenience. Our website is currently down for maintenance or facing technical issues.</p>
+    <div class="footer">— Please check back later —</div>
   </div>
 </body>
 </html>
